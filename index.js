@@ -4,6 +4,10 @@ import localStorage from 'localStorage';
 import {jsdom} from 'jsdom';
 import should from 'should';
 
+// say we're not in webpack environment
+// this is required to skip including styles
+global.__WEBPACK__ = false;
+
 // init jsdom
 global.document = jsdom();
 global.window = global.document.defaultView;
