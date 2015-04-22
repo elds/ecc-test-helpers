@@ -1,0 +1,17 @@
+{
+  "name": "ecc-test-helpers",
+  "version": "0.1.0",
+  "description": "Eccenca test helpers",
+  "main": "index.es5.js",
+  "scripts": {
+    "prepublish": "babel index.js > index.es5.js"
+  },
+  "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^5.0.1",
+    "localStorage": "^1.0.3",
+    "react": "^0.13.2",
+    "should": "^6.0.1"
+  }
+}
