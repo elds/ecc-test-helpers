@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "Eccenca test helpers",
   "main": "index.es5.js",
+  "es6": "index.js",
   "scripts": {
     "prepublish": "babel index.js > index.es5.js"
   },
