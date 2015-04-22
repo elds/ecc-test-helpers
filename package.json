@@ -1,10 +1,14 @@
 {
   "name": "ecc-test-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eccenca test helpers",
   "main": "index.es5.js",
   "scripts": {
     "prepublish": "babel index.js > index.es5.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.eccenca.com/elds-ui/ecc-test-helpers.git"
   },
   "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
   "license": "GPL-3.0",
