@@ -6,7 +6,8 @@
   "es5": "index.es5.js",
   "es6": "index.js",
   "scripts": {
-    "prepublish": "babel index.js > index.es5.js"
+    "build": "babel index.js -o index.es5.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
