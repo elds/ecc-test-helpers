@@ -1,5 +1,4 @@
 /* global before, beforeEach, afterEach */
-import React from 'react/addons';
 import localStorage from 'localStorage';
 import {jsdom} from 'jsdom';
 import should from 'should';
@@ -16,6 +15,9 @@ global.navigator = global.window.navigator;
 // local storage polyfill
 global.window.localStorage = localStorage;
 global.localStorage = localStorage;
+
+// import react after dom
+const React = require('react/addons');
 
 before(function() {
     // expose react and testutils
