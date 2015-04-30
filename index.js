@@ -20,6 +20,12 @@ global.localStorage = localStorage;
 // polyfill Intl for node
 global.Intl = Intl;
 
+// polyfill screen for node
+global.screen = {
+    width: 1000,
+    height: 1000,
+};
+
 // import react after dom
 const React = require('react/addons');
 
