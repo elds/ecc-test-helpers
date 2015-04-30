@@ -2,6 +2,7 @@
 import localStorage from 'localStorage';
 import {jsdom} from 'jsdom';
 import should from 'should';
+import Intl from 'intl';
 
 // say we're not in webpack environment
 // this is required to skip including styles
@@ -15,6 +16,9 @@ global.navigator = global.window.navigator;
 // local storage polyfill
 global.window.localStorage = localStorage;
 global.localStorage = localStorage;
+
+// polyfill Intl for node
+global.Intl = Intl;
 
 // import react after dom
 const React = require('react/addons');
