@@ -21,5 +21,8 @@
     "localStorage": "^1.0.3",
     "react": "^0.13.2",
     "should": "^6.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.2.15"
   }
 }
