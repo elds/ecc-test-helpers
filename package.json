@@ -1,6 +1,6 @@
 {
   "name": "ecc-test-helpers",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Eccenca test helpers",
   "main": "index.es5.js",
   "es5": "index.es5.js",
