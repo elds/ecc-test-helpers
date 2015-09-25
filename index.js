@@ -29,6 +29,12 @@ global.screen = {
     height: 1000,
 };
 
+// fake MDL upgrader to fix react-mdl breaking all tests
+// TODO: possible to find a better way so that we can test MDL as well?
+global.componentHandler = {
+    upgradeElement() {},
+};
+
 // import react after dom
 const React = require('react/addons');
 
