@@ -33,6 +33,7 @@ global.screen = {
 // TODO: possible to find a better way so that we can test MDL as well?
 global.componentHandler = {
     upgradeElement() {},
+    downgradeElements() {},
 };
 
 // import react after dom
