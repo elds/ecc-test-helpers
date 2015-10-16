@@ -1,6 +1,6 @@
 {
   "name": "ecc-test-helpers",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Eccenca test helpers",
   "main": "index.es5.js",
   "es5": "index.es5.js",
@@ -17,7 +17,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "intl": "^1.0.0",
-    "jsdom": "^5.6.0",
+    "jsdom": "^6.5.0",
     "localStorage": "^1.0.3",
     "react": "^0.13.3",
     "should": "^7.0.2"
