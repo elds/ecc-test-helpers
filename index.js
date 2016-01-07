@@ -37,12 +37,15 @@ global.componentHandler = {
 };
 
 // import react after dom
-const React = require('react/addons');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const TestUtils = require('react-addons-test-utils');
 
 before(function() {
     // expose react and testutils
     this.React = React;
-    this.TestUtils = React.addons.TestUtils;
+    this.ReactDOM = ReactDOM;
+    this.TestUtils = TestUtils;
 });
 
 beforeEach(function() {
