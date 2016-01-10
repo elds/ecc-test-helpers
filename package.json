@@ -1,13 +1,14 @@
 {
   "name": "ecc-test-helpers",
-  "version": "0.1.16",
+  "version": "0.2.0",
   "description": "Eccenca test helpers",
   "main": "index.es5.js",
   "es5": "index.es5.js",
   "es6": "index.js",
   "scripts": {
-    "build": "babel index.js -o index.es5.js",
-    "prepublish": "npm run build"
+    "build": "./node_modules/.bin/babel index.js -o index.es5.js",
+    "init": "node common-files/install.js",
+    "prepublish": "git submodule init && git submodule update && npm run init && npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,13 @@
   "license": "GPL-3.0",
   "dependencies": {
     "intl": "^1.0.0",
-    "jsdom": "^6.5.0",
+    "jsdom": "^7.0.0",
     "localStorage": "^1.0.3",
     "react": "^0.13.3",
-    "should": "^7.0.2"
+    "should": "^8.1.0"
   },
   "devDependencies": {
-    "babel": "^5.6.14"
+    "babel-cli": "^6.4.0",
+    "babel-preset-eccenca": "^1.0.0"
   }
 }

@@ -33,6 +33,10 @@ global.screen = {
 // TODO: possible to find a better way so that we can test MDL as well?
 global.componentHandler = {
     upgradeElement() {},
+    upgradeElements() {},
+    upgradeAllRegistered() {},
+    registerUpgradedCallback() {},
+    register() {},
     downgradeElements() {},
 };
 
