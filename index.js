@@ -57,7 +57,7 @@ beforeEach(function() {
 
 afterEach(function(done) {
     // clean jsdom
-    this.React.unmountComponentAtNode(this.container);
+    this.ReactDOM.unmountComponentAtNode(this.container);
     // remove from body
     global.document.body.removeChild(this.container);
     // timeout
