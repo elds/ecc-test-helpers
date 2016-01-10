@@ -32,8 +32,10 @@ global.screen = {
 // fake MDL upgrader to fix react-mdl breaking all tests
 // TODO: possible to find a better way so that we can test MDL as well?
 global.componentHandler = {
-    upgradeElement() {},
-    downgradeElements() {},
+    upgradeElement() {
+    },
+    downgradeElements() {
+    },
 };
 
 // import react after dom
