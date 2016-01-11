@@ -43,12 +43,14 @@ global.componentHandler = {
 // import react after dom
 const React = require('react');
 const ReactDOM = require('react-dom');
+const ReactDOMServer = require('react-dom/server');
 const TestUtils = require('react-addons-test-utils');
 
 before(function() {
     // expose react and testutils
     this.React = React;
     this.ReactDOM = ReactDOM;
+    this.ReactDOMServer = ReactDOMServer;
     this.TestUtils = TestUtils;
 });
 
