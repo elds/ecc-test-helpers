@@ -1,6 +1,7 @@
-# Eccenca test helpers
+# Eccenca test helpers (ecc-test-helpers)
 
 Offers a simple way to create an environment for testing.  
+
 Currently includes:  
 
 - [jsdom](https://github.com/tmpvar/jsdom) with [localStorage](https://github.com/lmaccherone/node-localstorage) for all your DOM needs
@@ -15,6 +16,10 @@ Currently includes:
 - Access React, TestUtils and test container using `this` context, like so:
 
 ```js
+
+import should from 'ecc-test-helpers';
+import Component from '../src/component';
+
 describe('Component suite', function() {
     describe('Component', function() {
         it('Should render ...', function() {
