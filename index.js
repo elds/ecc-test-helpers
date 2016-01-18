@@ -58,6 +58,9 @@ before(function() {
 beforeEach(function() {
     // create container
     this.container = global.window.document.createElement('div');
+
+    global.window.componentHandler = global.componentHandler;
+
     // append to body to allow non-react libs to be testable too
     global.document.body.appendChild(this.container);
 });
