@@ -32,6 +32,7 @@ global.screen = {
 // fake MDL upgrader to fix react-mdl breaking all tests
 // TODO: possible to find a better way so that we can test MDL as well?
 global.componentHandler = {
+    upgradeDom() {},
     upgradeElement() {},
     upgradeElements() {},
     upgradeAllRegistered() {},
@@ -41,24 +42,32 @@ global.componentHandler = {
 };
 
 // import react after dom
-const React = require('react/addons');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const ReactDOMServer = require('react-dom/server');
+const TestUtils = require('react-addons-test-utils');
 
 before(function() {
     // expose react and testutils
     this.React = React;
-    this.TestUtils = React.addons.TestUtils;
+    this.ReactDOM = ReactDOM;
+    this.ReactDOMServer = ReactDOMServer;
+    this.TestUtils = TestUtils;
 });
 
 beforeEach(function() {
     // create container
     this.container = global.window.document.createElement('div');
+
+    global.window.componentHandler = global.componentHandler;
+
     // append to body to allow non-react libs to be testable too
     global.document.body.appendChild(this.container);
 });
 
 afterEach(function(done) {
     // clean jsdom
-    this.React.unmountComponentAtNode(this.container);
+    this.ReactDOM.unmountComponentAtNode(this.container);
     // remove from body
     global.document.body.removeChild(this.container);
     // timeout
