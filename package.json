@@ -7,8 +7,7 @@
   "es6": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel index.js -o index.es5.js",
-    "init": "node common-files/install.js",
-    "prepublish": "git submodule init && git submodule update && npm run init && npm run build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
-    "babel-preset-eccenca": "^1.0.0"
+    "babel-preset-eccenca": "^1.0.0",
+    "ecc-dotfiles": "^1.1.2"
   }
 }
