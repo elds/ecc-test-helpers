@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.eccenca.com/elds-ui/ecc-test-helpers.git"
+    "url": "https://github.com/elds/ecc-test-helpers.git"
   },
-  "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+  "author": "eccenca GmbH <elds-support@eccenca.com> (http://eccenca.com)",
   "license": "GPL-3.0",
   "dependencies": {
     "intl": "^1.0.0",
