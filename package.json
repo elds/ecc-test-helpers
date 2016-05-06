@@ -7,7 +7,8 @@
   "es6": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel index.js -o index.es5.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -17,16 +18,22 @@
   "license": "GPL-3.0",
   "dependencies": {
     "intl": "^1.0.0",
-    "jsdom": "^7.0.0",
+    "jsdom": "^8.5.0",
     "localStorage": "^1.0.3",
-    "react": "^0.14.6",
-    "react-addons-test-utils": "^0.14.6",
-    "react-dom": "^0.14.6",
     "should": "^8.1.0"
+  },
+  "peerDependencies": {
+    "react": "0.14.x || 15.0.x",
+    "react-addons-test-utils": "0.14.x || 15.0.x",
+    "react-dom": "0.14.x || 15.0.x"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
     "babel-preset-eccenca": "^1.0.0",
-    "ecc-dotfiles": "^1.1.2"
+    "ecc-dotfiles": "^1.1.2",
+    "ecc-gulp-tasks": "^2.0.0",
+    "react": "^15.0.2",
+    "react-addons-test-utils": "^15.0.2",
+    "react-dom": "^15.0.2"
   }
 }
