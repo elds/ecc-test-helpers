@@ -21,21 +21,16 @@
     "intl": "^1.0.0",
     "jsdom": "^9.0.0",
     "localStorage": "^1.0.3",
-    "should": "^8.1.0"
-  },
-  "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-addons-test-utils": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "should": "^8.1.0",
+    "react": "^0.14.0",
+    "react-addons-test-utils": "^0.14.0",
+    "react-dom": "^0.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
     "babel-preset-eccenca": "^1.0.0",
     "ecc-dotfiles": "^1.4.0",
     "ecc-gulp-tasks": "^2.0.0",
-    "react": "^15.0.2",
-    "react-addons-test-utils": "^15.0.2",
-    "react-dom": "^15.0.2"
   },
   "bugs": {
     "url": "https://github.com/elds/ecc-test-helpers/issues"
