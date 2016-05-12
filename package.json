@@ -34,5 +34,8 @@
   },
   "bugs": {
     "url": "https://github.com/elds/ecc-test-helpers/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
