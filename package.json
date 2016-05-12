@@ -30,7 +30,7 @@
     "babel-cli": "^6.4.0",
     "babel-preset-eccenca": "^1.0.0",
     "ecc-dotfiles": "^1.4.0",
-    "ecc-gulp-tasks": "^2.0.0",
+    "ecc-gulp-tasks": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/elds/ecc-test-helpers/issues"
