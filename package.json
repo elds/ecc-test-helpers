@@ -1,6 +1,6 @@
 {
   "name": "ecc-test-helpers",
-  "version": "1.2.1",
+  "version": "15.0.0",
   "description": "A common cli test environment and helpers for testing components, stores and widgets.",
   "main": "index.es5.js",
   "es5": "index.es5.js",
@@ -22,9 +22,9 @@
     "jsdom": "^9.0.0",
     "localStorage": "^1.0.3",
     "should": "^8.1.0",
-    "react": "^0.14.0",
-    "react-addons-test-utils": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
+    "react-dom": "^15.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
@@ -34,5 +34,8 @@
   },
   "bugs": {
     "url": "https://github.com/elds/ecc-test-helpers/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
