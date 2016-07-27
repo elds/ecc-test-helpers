@@ -7,6 +7,7 @@ import Intl from 'intl';
 // say we're not in webpack environment
 // this is required to skip including styles
 global.__WEBPACK__ = false; // eslint-disable-line no-underscore-dangle
+global.__DEBUG__ = false; // eslint-disable-line no-underscore-dangle
 
 // init jsdom
 global.document = jsdom('<html><body><div id="mainContainer"></div></body></html>');

@@ -26,7 +26,7 @@ const Alert = React.createClass({
             ...otherProps} = this.props;
 
         const classes =  'mdl-alert mdl-alert--border mdl-alert--spacing mdl-alert--dismissable';
-
+        
         // TODO: add onclick event to remove alert
         let dismiss = false;
         if (handlerDismiss) {
