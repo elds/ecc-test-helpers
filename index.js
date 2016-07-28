@@ -16,7 +16,7 @@ global.window = global.document.defaultView;
 global.navigator = global.window.navigator;
 
 // mock location
-global.window.location.href = 'http://localhost/';
+jsdom.changeURL(global.window, 'http://localhost/');
 
 // local storage polyfill
 global.window.localStorage = localStorage;
@@ -65,6 +65,9 @@ beforeEach(function() {
 
     // append to body to allow non-react libs to be testable too
     global.document.body.appendChild(this.container);
+
+    // reset url before each test
+    jsdom.changeURL(global.window, 'http://localhost/');
 });
 
 afterEach(function(done) {

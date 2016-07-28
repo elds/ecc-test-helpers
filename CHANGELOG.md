@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 ### Changed
 - global `__DEBUG__` can now be set with `DEBUG` environment variable
 
+### Fixed
+- `window.location.href` is now correctly set with jsdom
+
 ## [15.0.1] 2016-07-27
 ### Fixed
 - global `__DEBUG__` variable does not lead to errors when running tests in the commandline.
