@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog's Format](http://keepachangelog.com/).
 
-## [Unreleased]
+## [15.1.0] 2016-07-28
 ### Added
 - expose `jsdom` to the global context, so that the API can be used
 - `console.debug`, as it is not available in node
