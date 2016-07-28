@@ -1,21 +1,25 @@
 /* global before, beforeEach, afterEach */
 import localStorage from 'localStorage';
-import {jsdom} from 'jsdom';
+import jsdom from 'jsdom';
 import should from 'should';
 import Intl from 'intl';
 
 // say we're not in webpack environment
 // this is required to skip including styles
 global.__WEBPACK__ = false; // eslint-disable-line no-underscore-dangle
-global.__DEBUG__ = false; // eslint-disable-line no-underscore-dangle
+global.__DEBUG__ = process.env.DEBUG || false; // eslint-disable-line no-underscore-dangle
 
 // init jsdom
-global.document = jsdom('<html><body><div id="mainContainer"></div></body></html>');
+global.document = jsdom.jsdom('<html><body><div id="mainContainer"></div></body></html>');
+global['jsdom'] = jsdom;
 global.window = global.document.defaultView;
 global.navigator = global.window.navigator;
 
 // mock location
-global.window.location.href = 'http://localhost/';
+jsdom.changeURL(global.window, 'http://localhost/');
+
+// Node has no console.debug, so we need to create it
+console.debug = console.log.bind(null, "debug: ");
 
 // local storage polyfill
 global.window.localStorage = localStorage;
@@ -64,6 +68,9 @@ beforeEach(function() {
 
     // append to body to allow non-react libs to be testable too
     global.document.body.appendChild(this.container);
+
+    // reset url before each test
+    jsdom.changeURL(global.window, 'http://localhost/');
 });
 
 afterEach(function(done) {
