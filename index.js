@@ -18,6 +18,9 @@ global.navigator = global.window.navigator;
 // mock location
 jsdom.changeURL(global.window, 'http://localhost/');
 
+// Node has no console.debug, so we need to create it
+console.debug = console.log.bind(null, "debug: ");
+
 // local storage polyfill
 global.window.localStorage = localStorage;
 global.localStorage = localStorage;

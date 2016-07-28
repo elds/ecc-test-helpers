@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 ## [Unreleased]
 ### Added
 - expose `jsdom` to the global context, so that the API can be used
+- `console.debug`, as it is not available in node
 
 ### Changed
 - global `__DEBUG__` can now be set with `DEBUG` environment variable
