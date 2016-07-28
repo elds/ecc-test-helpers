@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog's Format](http://keepachangelog.com/).
 
 ## [Unreleased]
+### Added
+- expose `jsdom` to the global context, so that the API can be used
+
 ### Changed
 - global `__DEBUG__` can now be set with `DEBUG` environment variable
 

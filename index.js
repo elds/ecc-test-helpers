@@ -1,6 +1,6 @@
 /* global before, beforeEach, afterEach */
 import localStorage from 'localStorage';
-import {jsdom} from 'jsdom';
+import jsdom from 'jsdom';
 import should from 'should';
 import Intl from 'intl';
 
@@ -10,7 +10,8 @@ global.__WEBPACK__ = false; // eslint-disable-line no-underscore-dangle
 global.__DEBUG__ = process.env.DEBUG || false; // eslint-disable-line no-underscore-dangle
 
 // init jsdom
-global.document = jsdom('<html><body><div id="mainContainer"></div></body></html>');
+global.document = jsdom.jsdom('<html><body><div id="mainContainer"></div></body></html>');
+global['jsdom'] = jsdom;
 global.window = global.document.defaultView;
 global.navigator = global.window.navigator;
 
