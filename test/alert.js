@@ -1,32 +1,16 @@
 import React from 'react';
 
-const Alert = React.createClass({
-
-    // define property types
-    propTypes: {
-        children: React.PropTypes.node.isRequired,
-        className: React.PropTypes.string,
-        handlerDismiss: React.PropTypes.func,
-        labelDismiss: React.PropTypes.string,
-        type: React.PropTypes.string,
-        border: React.PropTypes.bool,
-        vertSpacing: React.PropTypes.bool,
-    },
-
+class Alert extends React.Component {
     // template rendering
     render() {
         const {
-            className,
             border,
             handlerDismiss,
-            labelDismiss,
-            type,
-            vertSpacing,
-            children,
-            ...otherProps} = this.props;
+            ...otherProps
+        } = this.props;
 
-        const classes =  'mdl-alert mdl-alert--border mdl-alert--spacing mdl-alert--dismissable';
-        
+        const classes = 'mdl-alert mdl-alert--border mdl-alert--spacing mdl-alert--dismissable';
+
         // TODO: add onclick event to remove alert
         let dismiss = false;
         if (handlerDismiss) {
@@ -46,7 +30,7 @@ const Alert = React.createClass({
             </div>
         );
 
-    },
-});
+    }
+}
 
 export default Alert;

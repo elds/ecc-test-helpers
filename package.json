@@ -21,9 +21,8 @@
     "intl": "^1.0.0",
     "jsdom": "^9.0.0",
     "localStorage": "^1.0.3",
-    "react": "^15.0.0",
-    "react-addons-test-utils": "^15.0.0",
-    "react-dom": "^15.0.0",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
     "should": "^10.0.0"
   },
   "devDependencies": {
