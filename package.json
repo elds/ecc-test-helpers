@@ -18,12 +18,12 @@
   "author": "eccenca GmbH <opensource@eccenca.com> (http://eccenca.com)",
   "license": "GPL-3.0",
   "dependencies": {
-    "intl": "^1.0.0",
-    "jsdom": "^9.0.0",
+    "intl": "^1.2.5",
+    "jsdom": "^9.12.0",
     "localStorage": "^1.0.3",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
-    "should": "^10.0.0"
+    "should": "^11.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
