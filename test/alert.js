@@ -6,6 +6,7 @@ class Alert extends React.Component {
         const {
             border,
             handlerDismiss,
+            vertSpacing,
             ...otherProps
         } = this.props;
 

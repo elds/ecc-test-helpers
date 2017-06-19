@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog's Format](http://keepachangelog.com/).
 
+## [Unreleased]
+### Changed
+- Updated dependencies
+### Fixed
+- Call for react test utils
+
 ## [15.1.0] 2016-07-28
 ### Added
 - expose `jsdom` to the global context, so that the API can be used
