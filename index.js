@@ -50,7 +50,7 @@ global.componentHandler = {
 const React = require('react');
 const ReactDOM = require('react-dom');
 const ReactDOMServer = require('react-dom/server');
-const TestUtils = require('react-addons-test-utils');
+const TestUtils = require('react-dom/test-utils');
 
 before(function() {
     // expose react and testutils

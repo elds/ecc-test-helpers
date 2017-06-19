@@ -1,8 +1,10 @@
-
 // imports
 import should from '../index';
 
 import Alert from './alert.js';
+
+const noop = () => {
+}
 
 describe('Gui Elements Suite', function() {
     describe('Alert', function() {
@@ -12,10 +14,10 @@ describe('Gui Elements Suite', function() {
 
             // render
             const comp = TestUtils.renderIntoDocument(
-                <Alert border={true} vertSpacing={true} handlerDismiss={function() {}}>
-                <p>This is a</p>
-            <p>untyped message.</p>
-            </Alert>
+                <Alert border={true} vertSpacing={true} handlerDismiss={noop}>
+                    <p>This is a</p>
+                    <p>untyped message.</p>
+                </Alert>
             );
 
             // check that div structure is rendered correctly
